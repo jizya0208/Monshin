@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pacient_id: 1
+  name: MyString
+  birthday: 2021-05-19
+
+two:
+  pacient_id: 1
+  name: MyString
+  birthday: 2021-05-19
