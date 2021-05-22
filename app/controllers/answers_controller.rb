@@ -5,5 +5,9 @@ class AnswersController < ApplicationController
   
   def create
     @answer = Answer
+    if @answer.save
+      flash[:notice] = 'ご回答ありがとうございました'
+      redirect_to answers_path 
+    end
   end
 end

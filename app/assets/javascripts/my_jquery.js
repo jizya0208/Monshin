@@ -36,19 +36,27 @@
 // }
 
 $(function() {
-	$('input[name="question1"]').on('change', function() {
-		var $check = $(this).parents('.question1');
-		$('.question1').removeClass('ck');
+	$('input[name="q1"]').on('change', function() {
+		var $check = $(this).parents('.q1');
+		$('.q1').removeClass('ck');
 		if ($(this).prop('checked')) {
 			$check.addClass('ck');
 		}
 	});
 
-	$('input[name="question2"]').on('change', function() {
-		var $check = $(this).parents('.question2');
-		$('.question2').removeClass('ck');
+	$('input[name="q2"]').on('change', function() {
+		var $check = $(this).parents('.q2');
+		$('.q2').removeClass('ck');
 		if ($(this).prop('checked')) {
 			$check.addClass('ck');
 		}
 	});
+	
+	$('input[name="q3"]').on('change', function() {
+		var $check = $(this).parents('.q3');
+		$('.q3').removeClass('ck');
+		if ($(this).prop('checked')) {
+			$check.addClass('ck');
+		}
+	});	
 } );
